@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-  "incremental": true,
-  "target": "es6",
-  "module": "commonjs",
-  "outDir": "./dist",
-  "strict": true, 
-  "esModuleInterop": true
+    "baseUrl": "./src",
+    "incremental": true,
+    "target": "es2021",
+    "module": "commonjs",
+    "sourceMap": true,
+    "strict": true, 
+    "esModuleInterop": true,
+    "paths": {
+      "@src/*": ["./*"]
+  }
   },
-  "include": [
-      "./src"
-  ],
-  "exclude": [
-      "./node_modules"
-  ]
+  "include": ["./src/**/*"],
+  "exclude": [ "./node_modules"]
 }
